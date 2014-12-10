@@ -53,6 +53,4 @@
 
         <!-- end frame -->
     </body>
-
-    <!-- Mirrored from brick.html.themeforest.createit.pl/01-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Sep 2014 05:33:20 GMT -->
 </html>

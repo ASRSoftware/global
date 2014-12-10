@@ -167,6 +167,17 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
+    public function action_dashboard() {
+        $view = View::Forge('layout/dashboard');
+        $view->headerscript = View::Forge('layout/headerscript');
+        $view->nav = View::Forge('layout/nav');
+        $view->userdetails = View::Forge('dashboard/userdetails');
+        $view->contain = View::Forge('dashboard/maincontainer');
+        $view->footerscript = View::Forge('layout/footerscript');
+        $view->footer = View::Forge('layout/footer');
+        return $view;
+    }
+
     /**
      * The 404 action for the application.
      *

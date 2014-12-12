@@ -30,16 +30,17 @@ class Controller_Welcome extends Controller {
      */
     public function action_index() {
 
-        $data = Model_CommonFunction::search2(array('table' => 'property_master'));
-        $dataarray = array('listdata' => $data);
+//        $data = Model_CommonFunction::search2(array('table' => 'property_master'));
+//        $dataarray = array('listdata' => $data);
 
         $view = View::forge('layout/home');
         $view->headerscript = View::forge('layout/headerscript');
         $view->slider = View::forge('layout/slider');
         $view->nav = View::forge('layout/nav');
+        $view->searchmenu = View::forge('layout/searchmenu');
         $view->topnav = View::forge('layout/topnav');
         $view->rightbar = View::forge('layout/rightbar');
-        $view->propertylist2 = View::forge('welcome/propertylist2', $dataarray);
+       // $view->propertylist2 = View::forge('welcome/propertylist2', $dataarray);
         $view->footerscript = View::forge('layout/footerscript');
         $view->footer = View::forge('layout/footer');
         return $view;

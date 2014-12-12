@@ -43,6 +43,7 @@
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <?php echo $nav; ?>
+                        
                         <!-- /.navbar-collapse -->
 
                     </div>
@@ -50,7 +51,7 @@
             </nav>
 
             <div class="container">
-
+                 
             </div>
 
             <?php echo $slider; ?>
@@ -65,8 +66,9 @@
                         <?php echo $rightbar; ?>
                     </div>
                     <hr class="hidden-md hidden-lg hidden-xs">
-                    <div class="col-md-8">              
-                        <?php echo $propertylist2; ?>
+                    <div class="col-md-8">   
+                        <?php echo $searchmenu;?>
+                        <?php //echo $propertylist2; ?>
                         <hr class="visible-xs">
                     </div>
                 </div>

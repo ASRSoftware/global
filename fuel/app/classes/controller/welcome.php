@@ -30,17 +30,25 @@ class Controller_Welcome extends Controller {
      */
     public function action_index() {
 
-//        $data = Model_CommonFunction::search2(array('table' => 'property_master'));
-//        $dataarray = array('listdata' => $data);
+        if (Auth::check()) {
+            // Credentials ok, go right in.
+            list($driver, $userid) = Auth::get_user_id();
+            $email = Auth::get_email();
+            $screen = Auth::get_screen_name();
+        }
+        $data = Model_CommonFunction::search2(array('table' => 'property_master'));
+        $dataarray = array('listdata' => $data);
 
         $view = View::forge('layout/home');
         $view->headerscript = View::forge('layout/headerscript');
         $view->slider = View::forge('layout/slider');
         $view->nav = View::forge('layout/nav');
-        $view->searchmenu = View::forge('layout/searchmenu');
+        $authvar = View::forge('layout/topnav');
+        $authvar->state = true;
+        $authvar->username = true;
         $view->topnav = View::forge('layout/topnav');
         $view->rightbar = View::forge('layout/rightbar');
-       // $view->propertylist2 = View::forge('welcome/propertylist2', $dataarray);
+        $view->propertylist2 = View::forge('welcome/propertylist2', $dataarray);
         $view->footerscript = View::forge('layout/footerscript');
         $view->footer = View::forge('layout/footer');
         return $view;
@@ -165,6 +173,17 @@ class Controller_Welcome extends Controller {
         $view->contain = View::forge('contact/contactcontain');
         $view->footerscript = View::forge('layout/footerscript');
         $view->footer = View::forge('layout/footer');
+        return $view;
+    }
+
+    public function action_dashboard() {
+        $view = View::Forge('layout/dashboard');
+        $view->headerscript = View::Forge('layout/headerscript');
+        $view->nav = View::Forge('layout/nav');
+        $view->userdetails = View::Forge('dashboard/userdetails');
+        $view->contain = View::Forge('dashboard/maincontainer');
+        $view->footerscript = View::Forge('layout/footerscript');
+        $view->footer = View::Forge('layout/footer');
         return $view;
     }
 

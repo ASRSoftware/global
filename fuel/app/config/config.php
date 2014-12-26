@@ -254,6 +254,8 @@ return array(
         'packages' => array(
             'custom',
             'auth',
+            'email',
+            'parser',
         ),
     ),
         /**

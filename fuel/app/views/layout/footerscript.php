@@ -21,7 +21,8 @@
 <script src="<?php echo Uri::base(false); ?>assets/js/contact-form.js"></script>
 <script src="<?php echo Uri::base(false); ?>assets/js/main.js"></script>
 
-
+<!--CUSTOM FUNCTION-->
+<script src="<?php echo Uri::base(false); ?>assets/js/cust-fun.js"></script>
 <!-- frame -->
 
 <!--<link href="assets/createit/css/style.css" media="all" rel="stylesheet" type="text/css">-->

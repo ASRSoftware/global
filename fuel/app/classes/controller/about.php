@@ -29,7 +29,7 @@ class Controller_About extends Controller {
      * @return  Response
      */
     public function action_index() {
-
+        
         $view = View::forge('layout/about');
         $view->headerscript = View::forge('layout/headerscript');
         $view->slider = View::forge('layout/slider');
@@ -40,6 +40,7 @@ class Controller_About extends Controller {
         $view->footerscript = View::forge('layout/footerscript');
         $view->footer = View::forge('layout/footer');
         return $view;
+        
     }
 
     /**

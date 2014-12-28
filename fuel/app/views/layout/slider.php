@@ -1,1 +1,1 @@
-<section class="parallax parallax-header" style="background-image: url(http://localhost/global/public/assets/img/demo-content/properties_parallax.jpg); background-attachment: fixed; background-position: 50% 12px;"></section>
+<section class="parallax parallax-header" style="background-image: asdsad das dasdasurl(<?php echo Uri::base(false) ?>public/img/demo-content/properties_parallax.jpg); background-attachment: fixed; background-position: 50% 12px;"></section>

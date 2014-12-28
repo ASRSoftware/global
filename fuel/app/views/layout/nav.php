@@ -30,7 +30,66 @@
                     <li><a href="<?php echo Uri::base(false);?>welcome">Home</a></li>
                      <li><a href="<?php echo Uri::base(false);?>about">About us</a></li>
                      <li><a href="<?php echo Uri::base(false);?>">Sell & Rent</a></li>
-                     <li><a href="<?php echo Uri::base(false);?>propertylist">Property</a></li>
+                     <li><a href="<?php echo Uri::base(false);?>propertylist">Property</a>
+
+                     <div class="inner-menu" style="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="inner-menu-bg">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                            <h3>Heading</h3>
+                                            <ul>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                            </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                            <h3>Heading</h3>
+                                            <ul>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                            </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                            <h3>Heading</h3>
+                                            <ul>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                            </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                            <h3>Heading</h3>
+                                            <ul>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                                <li><a href="#">Content content</a></li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                     </div>
+
+                     </li>
                     <li><a href="<?php echo Uri::base(false);?>contact">Contact Us</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->

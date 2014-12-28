@@ -1,3 +1,7 @@
+<div class="callback">
+    <?php echo Asset::img('callus.png'); ?>
+</div>
+
 <footer class="light">
     <div class="container">
         <div class="row">

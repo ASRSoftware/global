@@ -13031,3 +13031,10 @@ body .vco-slider .slider-item .content .content-container .media .media-wrapper 
   box-shadow: 0 2px 20px rgba(0,0,0,.5);
   margin-top: 100px;
 }
+
+.callback{
+  position:fixed;
+  bottom: 0;
+  right: 120px;
+  z-index: 9999;
+}

@@ -66,6 +66,7 @@
                     </div>
                     <hr class="hidden-md hidden-lg hidden-xs">
                     <div class="col-md-8">              
+                        <?php echo $searchBar; ?>
                         <?php echo $propertylist2; ?>
                         <hr class="visible-xs">
                     </div>

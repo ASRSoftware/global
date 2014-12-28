@@ -47,7 +47,7 @@
                 <option value="5">5</option>
             </select>
         </span>
-        </span>
+        </span><!-- 
         <div class="slider-range-container">
             <div class="row">
                 <div class="header">
@@ -68,7 +68,7 @@
                     <label for="amount-max" class="uppercase pull-right">Price Max.</label>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <a class="btn light-grey flat btn-block uppercase" onclick="document.getElementById('property-search').submit()">
             Find Property

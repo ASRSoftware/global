@@ -1,33 +1,7 @@
 <?php
 
-/**
- * Fuel is a fast, lightweight, community driven PHP5 framework.
- *
- * @package    Fuel
- * @version    1.5
- * @author     Fuel Development Team
- * @license    MIT License
- * @copyright  2010 - 2013 Fuel Development Team
- * @link       http://fuelphp.com
- */
-
-/**
- * The Welcome Controller.
- *
- * A basic controller example.  Has examples of how to set the
- * response body and status.
- *
- * @package  app
- * @extends  Controller
- */
 class Controller_Welcome extends Controller {
 
-    /**
-     * The basic welcome message
-     *
-     * @access  public
-     * @return  Response
-     */
     public function action_index() {
 
         if (Auth::check()) {
@@ -47,6 +21,7 @@ class Controller_Welcome extends Controller {
         $authvar->state = true;
         $authvar->username = true;
         $view->topnav = View::forge('layout/topnav');
+        $view->searchBar = View::forge('layout/searchBar');
         $view->rightbar = View::forge('layout/rightbar');
         $view->propertylist2 = View::forge('welcome/propertylist2', $dataarray);
         $view->footerscript = View::forge('layout/footerscript');
@@ -54,13 +29,6 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-     * show how to use them.
-     *
-     * @access  public
-     * @return  Response
-     */
     public function action_about() {
         $view = View::forge('layout/about');
         $view->headerscript = View::forge('layout/headerscript');
@@ -74,13 +42,6 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-     * show how to use them.
-     *
-     * @access  public
-     * @return  Response
-     */
     public function action_playout() {
 
         $data = Model_CommonFunction::search(array('table' => 'property_master'));
@@ -98,13 +59,6 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-     * show how to use them.
-     *
-     * @access  public
-     * @return  Response
-     */
     public function action_slayout() {
         $data1 = Model_CommonFunction::get_data(array('table' => 'property_master', 'where' => 'property_id', 'value' => '1'));
         $data2 = Model_CommonFunction::get_data(array('table' => 'property_features', 'where' => 'property_id', 'value' => '1'));
@@ -136,13 +90,6 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-     * show how to use them.
-     *
-     * @access  public
-     * @return  Response
-     */
     public function action_slistlayout() {
         $view = View::forge('layout/singlepropertylist');
         $view->headerscript = View::forge('layout/headerscript');
@@ -156,13 +103,7 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-     * show how to use them.
-     *
-     * @access  public
-     * @return  Response
-     */
+
     public function action_contact() {
         $view = View::forge('layout/contactlayout');
         $view->headerscript = View::forge('layout/headerscript');
@@ -187,12 +128,7 @@ class Controller_Welcome extends Controller {
         return $view;
     }
 
-    /**
-     * The 404 action for the application.
-     *
-     * @access  public
-     * @return  Response
-     */
+
     public function action_404() {
         return 'asdf';
     }

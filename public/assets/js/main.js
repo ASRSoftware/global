@@ -176,12 +176,12 @@ jQuery(function() {
         max: 500000,
         values: [ 90000, 400000 ],
         slide: function( event, ui ) {
-            jQuery( "#amount-min" ).val( "$ " + ui.values[ 0 ]);
-            jQuery( "#amount-max" ).val( "$ " + ui.values[ 1 ]);
+            jQuery( "#amount-min" ).val( "Rs. " + ui.values[ 0 ]);
+            jQuery( "#amount-max" ).val( "Rs. " + ui.values[ 1 ]);
         }
     });
-    jQuery( "#amount-min" ).val( "$ " + jQuery( "#slider-range" ).slider( "values", 0 ) );
-    jQuery( "#amount-max" ).val( "$ " + jQuery( "#slider-range" ).slider( "values", 1 ) );
+    jQuery( "#amount-min" ).val( "Rs. " + jQuery( "#slider-range" ).slider( "values", 0 ) );
+    jQuery( "#amount-max" ).val( "Rs. " + jQuery( "#slider-range" ).slider( "values", 1 ) );
 });
 
 jQuery(function() {
@@ -191,12 +191,12 @@ jQuery(function() {
         max: 500000,
         values: [ 90000, 400000 ],
         slide: function( event, ui ) {
-            jQuery( "#amount-min-map" ).val( "$ " + ui.values[ 0 ]);
-            jQuery( "#amount-max-map" ).val( "$ " + ui.values[ 1 ]);
+            jQuery( "#amount-min-map" ).val( "Rs. " + ui.values[ 0 ]);
+            jQuery( "#amount-max-map" ).val( "Rs. " + ui.values[ 1 ]);
         }
     });
-    jQuery( "#amount-min-map" ).val( "$ " + jQuery( "#slider-range-map" ).slider( "values", 0 ) );
-    jQuery( "#amount-max-map" ).val( "$ " + jQuery( "#slider-range-map" ).slider( "values", 1 ) );
+    jQuery( "#amount-min-map" ).val( "Rs. " + jQuery( "#slider-range-map" ).slider( "values", 0 ) );
+    jQuery( "#amount-max-map" ).val( "Rs. " + jQuery( "#slider-range-map" ).slider( "values", 1 ) );
 });
 
 

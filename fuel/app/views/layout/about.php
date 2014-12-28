@@ -19,10 +19,7 @@
 
             </div>
 
-            <section class="parallax parallax-header" style="background-image: url('assets/images/demo-content/aboutus_parallax.jpg')">
-
-            </section>
-
+            <section class="parallax parallax-header" style="background-image: url('<?php echo Uri::base(false) ?>assets/img/demo-content/properties_parallax.jpg'); background-attachment: fixed; background-position: 50% 12px;"></section>
             <div class="container">
 
             </div>

@@ -3569,7 +3569,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
 }
 .nav > li {
-  position: relative;
+/*   position: relative; */
   display: block;
 }
 .nav > li > a {
@@ -13030,4 +13030,36 @@ body .vco-slider .slider-item .content .content-container .media .media-wrapper 
   border-radius: 4px;
   box-shadow: 0 2px 20px rgba(0,0,0,.5);
   margin-top: 100px;
+}
+
+.callback{
+  position:fixed;
+  bottom: 0;
+  right: 120px;
+  z-index: 9999;
+}
+.inner-menu{
+  display: none;
+  position:absolute;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  transform: translate(0px, 100px);
+  -webkit-transform: translate(0px, 100px);
+  -webkit-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.inner-menu .inner-menu-bg{
+  background: white;
+  padding: 20px;
+  box-shadow: 0 3px 3px rgba(0,0,0,.4);
+}
+
+.navbar-nav li:hover .inner-menu{
+  display: block;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  opacity: 1;
 }

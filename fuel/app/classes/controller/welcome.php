@@ -130,7 +130,17 @@ class Controller_Welcome extends Controller {
 
 
     public function action_404() {
-        return 'asdf';
+
+        $view = View::forge('layout/about');
+        $view->headerscript = View::forge('layout/headerscript');
+        $view->slider = View::forge('layout/slider');
+        $view->nav = View::forge('layout/nav');
+        $view->topnav = View::forge('layout/topnav');
+        $view->rightbar = View::forge('layout/rightbar');
+        $view->contain = View::forge('layout/404');
+        $view->footerscript = View::forge('layout/footerscript');
+        $view->footer = View::forge('layout/footer');
+        return $view;
     }
 
 }

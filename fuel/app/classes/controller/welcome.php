@@ -15,6 +15,7 @@ class Controller_Welcome extends Controller {
 
         $view = View::forge('layout/home');
         $view->headerscript = View::forge('layout/headerscript');
+        
         $view->slider = View::forge('layout/slider');
         $view->nav = View::forge('layout/nav');
         $authvar = View::forge('layout/topnav');

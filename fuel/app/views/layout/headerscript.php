@@ -6,7 +6,7 @@
     <script src="<?php echo Uri::base(false);?>assets/js/modernizr.custom.js"></script>
     <script src="<?php echo Uri::base(false);?>assets/js/device.min.js"></script>
 
-    <title>Brick - Real Estate Template</title>
+    <title>Global Property Kart</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Uri::base(false);?>assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="<?php echo Uri::base(false);?>assets/motives/red.css"> -->
